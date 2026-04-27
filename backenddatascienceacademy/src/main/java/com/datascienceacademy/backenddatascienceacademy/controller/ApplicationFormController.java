@@ -66,12 +66,15 @@ public class ApplicationFormController {
                 .collect(Collectors.toList());
 
         return new ApplicationDto(
-                form.getId(),
-                form.getApplicationId(),
-                form.getSubmissionDate(),
-                form.getFullName(),
-                form.getCourseCode(),
-                modules
+                form.getId(), form.getApplicationId(), form.getSubmissionDate(),
+                form.getFullName(), form.getIdNumber(), form.getEmail(), form.getPhoneNumber(),
+                form.getGender(), form.getNationality(), form.getProvince(), form.getCity(),
+                form.getHighestQualification(), form.getInstitution(), form.getYearCompleted(),
+                form.getCurrentStatus(), form.getGithubUrl(), form.getLinkedinUrl(),
+                form.getHowDidYouHearAboutUs(), form.getMotivationLetter(),
+                form.isWillingToRelocate(), form.getPreferredLocation(),
+                form.getApplicationStatus(), form.getRelevantSkillsCount(),
+                form.getCourseCode(), modules
         );
     }
 
